@@ -1,6 +1,6 @@
 {
   "name": "console-pos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Mike Groseclose",
   "email": "mike.groseclose@gmail.com",
   "description": "console-pos returns the current position of your cursor in your terminal.",

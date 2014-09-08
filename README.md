@@ -14,8 +14,15 @@ $ npm install console-pos
 
 ## Use
 
-TBD
-row
+console-pos takes an output stream as a required argument (such as process.stdout).
+```
+consolePos = require('console-pos')(process.stdout)
+```
+
+Use row to get the current position of the cursor on the current line.
+```
+consolePos.row()
+```
 
 ## License
 
