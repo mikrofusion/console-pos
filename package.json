@@ -1,0 +1,52 @@
+{
+  "name": "console-pos",
+  "version": "0.0.1",
+  "author": "Mike Groseclose",
+  "email": "mike.groseclose@gmail.com",
+  "description": "console-pos returns the current position of your cursor in your terminal.",
+  "homepage": "http://github.com/mikegroseclose/console-pos",
+  "author": {
+    "name": "Mike Groseclose",
+    "email": "mike.groseclose@gmail.com",
+    "url": "http://mikegroseclose.com"
+  },
+  "keywords": [
+    "console-pos",
+    "console",
+    "cursor",
+    "position",
+    "console",
+    "terminal"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikegroseclose/console-pos.git"
+  },
+  "scripts": {
+    "test": "./runtests",
+    "start": "gulp"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "string-length": "1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-coffee": "^1.4.3",
+    "gulp-coffeelint": "0.3.3",
+    "gulp-concat": "^2.2.0",
+    "gulp-plumber": "^0.5.6",
+    "gulp-util": "^2.2.14",
+    "coffee-script": "^1.7.1",
+    "mocha": "1.17.1",
+    "chai": "1.9.0",
+    "sinon": "1.10.3"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://github.com/mikegroseclose/console-pos/raw/master/LICENSE"
+  }]
+}
