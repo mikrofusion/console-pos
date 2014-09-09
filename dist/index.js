@@ -5,7 +5,7 @@ stringLength = require('string-length');
 
 afterNewline = function(str) {
   var i;
-  i = str.indexOf('\n');
+  i = ('' + str).indexOf('\n');
   if (i !== -1) {
     return afterNewline(str.substr(i + 1, str.length));
   } else {
@@ -22,12 +22,13 @@ ConsolePos = (function() {
     if (output == null) {
       throw new Error('console-pos requires an output stream.');
     }
+    this.reset();
     output._consolePosOriginalWrite = output.write;
     output.write = function() {
       var args, str;
       args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
       str = args[0];
-      if (str.indexOf('\n') !== -1) {
+      if (("" + str).indexOf('\n') !== -1) {
         _currentLine = '';
       }
       str = afterNewline(str);
@@ -38,6 +39,10 @@ ConsolePos = (function() {
 
   ConsolePos.prototype.row = function() {
     return stringLength(_currentLine);
+  };
+
+  ConsolePos.prototype.reset = function() {
+    return _currentLine = '';
   };
 
   return ConsolePos;

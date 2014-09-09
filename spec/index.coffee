@@ -44,3 +44,19 @@ describe 'consolePos', ->
 
       it 'returns the sum number of characters written', ->
         expect(consolePos.row()).to.eq (test1.length + test2.length)
+
+    describe 'when a string is written with special chracters characters', ->
+      before ->
+        output.write '\n'
+        output.write 'this \x1b[;38;5;1mis a test with colors'
+
+      it 'returns the sum number of characters written', ->
+        expect(consolePos.row()).to.eq 26
+
+    describe 'when a non-string is written', ->
+      before ->
+        output.write '\n'
+        output.write 11
+
+      it 'gives the lengh of the string equivalent it to a string', ->
+        expect(consolePos.row()).to.eq 2
