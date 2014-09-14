@@ -31,5 +31,5 @@ consolePos.row()
 [npm-url]: https://npmjs.org/package/console-pos
 [npm-image]: https://badge.fury.io/js/console-pos.png
 
-[travis-url]: http://travis-ci.org/mikegroseclose/console-pos
-[travis-image]: https://secure.travis-ci.org/mikegroseclose/console-pos.png?branch=master
+[travis-url]: http://travis-ci.org/mikrofusion/console-pos
+[travis-image]: https://secure.travis-ci.org/mikrofusion/console-pos.png?branch=master

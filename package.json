@@ -4,11 +4,10 @@
   "author": "Mike Groseclose",
   "email": "mike.groseclose@gmail.com",
   "description": "console-pos returns the current position of your cursor in your terminal.",
-  "homepage": "http://github.com/mikegroseclose/console-pos",
+  "homepage": "http://github.com/mikrofusion/console-pos",
   "author": {
     "name": "Mike Groseclose",
-    "email": "mike.groseclose@gmail.com",
-    "url": "http://mikegroseclose.com"
+    "email": "mike.groseclose@gmail.com"
   },
   "keywords": [
     "console-pos",
@@ -21,7 +20,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikegroseclose/console-pos.git"
+    "url": "git://github.com/mikrofusion/console-pos.git"
   },
   "scripts": {
     "test": "./runtests",
@@ -47,6 +46,6 @@
   },
   "licenses": [{
     "type": "MIT",
-    "url": "http://github.com/mikegroseclose/console-pos/raw/master/LICENSE"
+    "url": "http://github.com/mikrofusion/console-pos/raw/master/LICENSE"
   }]
 }
